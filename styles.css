@@ -4244,18 +4244,17 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
-/* index-contact */
 .index-contact-section {
   position: relative;
   overflow: hidden;
-  background-color: #2F2A26;
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(200, 169, 107, 0.12) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 30%, rgba(143, 169, 179, 0.10) 0%, transparent 50%),
-    linear-gradient(180deg, #2F2A26 0%, #1e1a16 100%);
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(20, 14, 8, 0.55) 0%, rgba(20, 14, 8, 0.65) 100%), url('assets/site-index-hero-image-1.webp') !important;
   color: var(--text-light);
-  padding: 96px 24px;
+  padding: 60px 24px;
   direction: rtl;
+  background-size: cover, cover !important;
+  background-position: center center, center center !important;
+  background-repeat: no-repeat;
 }
 
 /* BG glow SVG */
@@ -5530,6 +5529,15 @@ nav.navbar .sub-menu li a:hover { color: #C8A96B !important; background-color: r
   }
 }
 /* === NAVBAR STYLE OVERRIDES END === */
+
+.index-contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(30, 22, 15, 0.72) 0%, rgba(20, 14, 8, 0.80) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
