@@ -2906,15 +2906,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
-/* index-services */
 .index-services-section {
   position: relative;
   overflow: visible;
-  background-color: #F5EFE6;
-  background-image:
-    radial-gradient(ellipse at 15% 20%, rgba(200,169,107,0.07) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 75%, rgba(143,169,179,0.08) 0%, transparent 55%),
-    linear-gradient(180deg, #F5EFE6 0%, #EBE0D0 100%);
+  background-color: transparent;
+  background-image: none;
   color: var(--text-dark);
   padding: 96px 24px 110px;
   direction: rtl;
@@ -3186,12 +3182,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
-/* index-benefits */
 .index-benefits-section {
   position: relative;
   overflow: visible;
-  background: linear-gradient(180deg, #F5EFE6 0%, #EBE0D0 100%);
-  background-color: #F5EFE6;
+  background: transparent;
+  background-color: transparent;
   color: var(--text-dark);
   padding: 96px 24px 100px;
   direction: rtl;
@@ -3506,18 +3501,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     padding: 14px 0;
   }
 }
-/* ZAPPY_POSTGEN_GUARD_RTL_ORDER:בית-benefits — stripped 2 order declaration(s) conflicting with RTL grid */
-
-
-/* index-about */
 .index-about-section {
   position: relative;
   overflow: visible;
-  background-color: #2F2A26;
-  background-image:
-    radial-gradient(ellipse at 80% 20%, rgba(143,169,179,0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 20% 80%, rgba(200,169,107,0.08) 0%, transparent 55%),
-    linear-gradient(180deg, #2C2722 0%, #2F2A26 60%, #2A2520 100%);
+  background-color: transparent;
+  background-image: none;
   color: var(--text-light);
   padding: 96px 24px 90px;
   direction: rtl;
@@ -3778,15 +3766,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
-/* index-testimonials */
 .index-testimonials-section {
   position: relative;
   overflow: visible;
-  background-color: #F5EFE6;
-  background-image:
-    radial-gradient(ellipse at 10% 20%, rgba(143,169,179,0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 90% 80%, rgba(200,169,107,0.09) 0%, transparent 50%),
-    linear-gradient(180deg, #F5EFE6 0%, #EBE0D0 100%);
+  background-color: transparent;
+  background-image: none;
   color: var(--text-dark);
   padding: 96px 24px 144px;
   direction: rtl;
@@ -4060,15 +4044,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
-/* index-stats */
 .index-stats-section {
   position: relative;
   overflow: visible;
-  background-color: #8FA9B3;
-  background-image:
-    radial-gradient(ellipse at 80% 20%, rgba(200,169,107,0.13) 0%, transparent 55%),
-    radial-gradient(ellipse at 20% 80%, rgba(143,169,179,0.18) 0%, transparent 55%),
-    linear-gradient(180deg, #92ABB5 0%, #6B8D9A 100%);
+  background-color: transparent;
+  background-image: none;
   color: var(--text-light);
   padding: 96px 24px 110px;
   direction: rtl;
@@ -4255,7 +4235,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   position: relative;
   overflow: hidden;
   background-color: transparent;
-  background-image: linear-gradient(180deg, rgba(20, 14, 8, 0.55) 0%, rgba(20, 14, 8, 0.65) 100%), url('assets/site-index-hero-image-1.webp') !important;
+  background-image: none;
   color: var(--text-light);
   padding: 60px 24px;
   direction: rtl;
@@ -5558,6 +5538,40 @@ nav.navbar .sub-menu li a:hover { color: #C8A96B !important; background-color: r
 .nav-cta-btn { color: #333333 !important; }
 /* === BUTTON TEXT OVERRIDES END === */
 
+
+html, body {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+:root {
+  --bg-light: transparent;
+  --bg-dark: transparent;
+  --background: transparent;
+  --surface: transparent;
+}
+
+.index-hero-section,
+.index-services-section,
+.index-benefits-section,
+.index-about-section,
+.index-testimonials-section,
+.index-stats-section,
+.index-contact-section {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.navbar, nav {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.site-footer {
+  background: transparent !important;
+  background-color: transparent !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
